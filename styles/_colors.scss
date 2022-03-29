@@ -3,3 +3,21 @@ $oscuro: #222121;
 $vagua: #0ddda9;
 $voscuro: #07a37c;
 $azul: #0059ff;
+
+$colors: (
+    "primario": $vagua,
+    "secundario": $voscuro,
+    "blanco": $claro,
+    "oscuro": $oscuro,
+    "azul": #1919e6,
+    "rojo": #e61919,
+    "amarillo": #e6e619,
+    "naranja": #ffa600,
+    "violeta": #9900ff,
+    "gris": #808080,
+);
+
+@debug map-get($map: $colors , $key: "azul");
+@debug map-has-key($map: $colors, $key: "rojo");
+@debug map-remove($map: $colors, $keys: "gris");
+@debug map-merge($map1: $colors , $map2: ("pink": #ffc0cb))
